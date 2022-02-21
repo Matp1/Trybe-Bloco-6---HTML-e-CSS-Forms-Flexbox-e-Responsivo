@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>Sorteio de uma Viagem</header>
+    
+        <form>
+            <fieldset>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" minlength="10" maxlength="40">
+                <br>
+                <label for="email">Email:</label>
+                <input type="text" id="email" minlength = "10" maxlength="50">
+                <br>
+                <input type="radio" id="opcoes1" name = "opcao">
+                <label for="opcoes1" name = "opcao">Maldivas</label>
+                
+                <input type="radio" id="opcoes2" name = "opcao">
+                <label for="opcoes2" name = "opcao">Caribe</label>
+
+                <input type="radio" id="opcoes3" name = "opcao">
+                <label for="opcoes3" name = "opcao">Vale Do Silício</label>
+
+                <input type="radio" id="opcoes4" name = "opcao">
+                <label for="opcoes4" name = "opcao">Canadá</label>
+                <br>
+                <label for="resposta">Por que você deveria ganhar o concurso TrybeTrip:</label>
+                <br>
+                <textarea maxlength="500" cols="60" rows="10" id="resposta"></textarea>
+                <br>
+                <label name = "data" for="insiraData">Qual é a melhor data para realizar sua viagem?:</label> 
+                <input type="text" id="insiraData" name= "data" placeholder="dd/mm/aaaa">
+                <br>
+                <label name = "concordo" for="concordo1">Gostaria de receber outras oportunidades oferecidas pela Trybe?</label>
+                <input type="checkbox" id="concordo1" name="concordo">
+                <br>
+                <label name = "concordo" for="concordo2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+                <input type="checkbox" id="concordo2" name="concordo">
+                <br>
+            </fieldset>
+            <button type="submit" id="submit-btn">Participar do concurso TrybeTrip</button>
+            <button type="button" id="clear-btn">Apagar informações</button>
+        </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>
